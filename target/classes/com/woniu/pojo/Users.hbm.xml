@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-12-17 21:00:30 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.woniu.pojo.Users" table="USERS">
+        <id name="userId" type="java.lang.Integer">
+            <column name="user_Id" />
+            <generator class="identity" />
+        </id>
+        <!-- <many-to-one name="worklevels" class="com.woniu.pojo.Worklevels" fetch="join">
+            <column name="WORKLEVELS" />
+        </many-to-one> -->
+        <property name="userName" type="java.lang.String">
+            <column name="user_name" />
+        </property>
+        <property name="userPwd" type="java.lang.String">
+            <column name="user_pwd" />
+        </property>
+        <property name="userRole" type="java.lang.String">
+            <column name="user_role" />
+        </property>
+        <property name="userStatus" type="java.lang.String">
+            <column name="user_status" />
+        </property>
+        <property name="userPhoto" type="java.lang.String">
+            <column name="user_photo" />
+        </property>
+        <property name="levelId" type="java.lang.Integer">
+            <column name="level_id" />
+        </property>
+    </class>
+</hibernate-mapping>
